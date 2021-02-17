@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:9;}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.5">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h1>The Mishandling and Chemical Causes of the Flint, Mich. Water Crisis</h1>
+<h3>By Oliver Trejo</h3>
+
+<div class="tab">
+  <button class="tablinks" onclick="openSection(event, 'Background')">Background</button>
+  <button class="tablinks" onclick="openSection(event, 'The Study')">The Study</button>
+  <button class="tablinks" onclick="openSection(event, 'Government Failings')">Government Failings</button>
+  <button class="tablinks" onclick="openSection(event, 'Next Steps')">Next Steps</button>
+  <button class="tablinks" onclick="openSection(event, 'Resources')">Resources</button>
+</div>
+
+<div id="Background" class="tabcontent">
+  <h3>Background</h3>
+  <p> In 2014, Flint, Michigan decided to switch water providers from the Detroit Water and Sewerage Department (DWSD) to the Karegnondi Water Authority. During the transition period, they decided to use the Flint River as their main water source for two years. However, instead of taking the suggested steps to proactively treat the water, they decided to wait and see if any problems arose. In May of 2014, residents started to complain about water quality. The government found E. Coli and total coliform bacteria present in the water, which they addressed by increasing the chlorine content in the water supply. This, as was later demonstrated, would increase the corrosiveness of the Flint River drinking water. General Motors cited this as the reason they stopped using Flint water in their machines in mid-2014.</p>
+  <p> In February of the next year, a Flint resident (known as Resident 0), had their water tested and found high lead content in their drinking water. After increasing the chlorine content, Flint's government had not increased corrosion controlling chemicals. Flint spokesman Brad Wurfel then dismissed concerns about lead content in the water. In addition to this statement, Flint officials omitted several homes with high liead content from their report about water quality as they had decided these were outliers. In September 2015, it was determined that 4% of children under 5 had elevated lead levels after the switch, while ~2% had had high lead blood content before the switch. In October, they switched back to the DWSD to try to stop the high lead content. Over the next two months, Flint's mayor, the Governor of Michigan, and President Obama all declared states of emergency in Flint. Finally, over the course of the next half-year, a hearing was held about the Flint water crisis and an independant probe determined that Flint officials were negligient in their handling of the crisis and could've prevented it. In the end many Flint officials were criminally charged in relation to the water crisis.</p>
+</div>
+
+<div id="The Study" class="tabcontent">
+  <h3>The Study</h3>
+  <h4>The Goal:</h4>
+  <p>The goal of the study was to determine the cause of the Flint water crisis. The authors hoped to learn how Flint’s water crisis started and what mistakes in the water-cleaning chemistry were factors in the crisis. The researchers also looked at the amount of lead in the water in order to determine how extreme the specific incidents of lead-contaminated water were. They also discussed ways in which city officials failed to implement safeguards against lead contamination and what those mistakes affected. The authors collected data of water samples from January to April 2015 to determine their lead, iron, and phosphate content, alongside samples from the corroded and non-corroded pipes. The authors used this data to determine the cause of corrosion, lead content, and other contaminants.</p> 
+
+  <h4>The Methodology:</h4>
+  <p>6 water samples were collected in the latter half of January 2015 by Resident 0. These samples were then sent to the researchers at Virginia Tech, who then extracted aliquots after shaking the bottle to re-dissolve any solutes that may have precipitated during travel. These aliquots were then acidified with 2% nitric acid and 2% hydroxylamine and heated at 50 C° for at least 24 hours. The researchers used Inductively Coupled Plasma-Mass Spectrometry to analyze the metals in the water. After the city shut off Resident Zero’s water for three weeks, seven sequential 1L samples and 250 mL flushed samples were taken after the lines were flushed for 25 minutes and let to rest for 6 hours at three different flow rates. The researchers at Virginia Tech then assessed water clarity, color, and cloudiness. They performed the same lead analysis on three of these samples (different flow rates) to determine the lead content. They also dug up two sections of the galvanized iron water pipe for further analysis of the corroded scale. Finally, the researchers used Spearman’s rank correlation to determine the connections between lead content and other parameters of water quality.</p>
+
+  <h4>The Data Interpretation:</h4>
+  <p> The authors determined that the flow rate of water through the corroded galvanized iron pipes and lead pipes did not necessarily determine the amount of lead present in the water, unless the flow rate was increasing, which caused the amount of lead carried by the water to spike. Iron in water concentrations were highly correlated with lead in water concentrations, which showed that the iron and lead were caused by the destabilization of the lead containing corrosion rust layers. Levels of lead were significantly over the EPA action level, while several were above the EPA’s hazardous waste level. The drinking water from the DWSD contained ~1.07 mg/L of orthophosphate, which causes insoluble scales with soluble metals inside water pipes over long periods of time. When Flint switched water sources and stopped adding orthophosphates to the water, the scales started to break down. By simply adding back the orthophosphates, lead and iron levels would have likely dropped by about two thirds. 
+</p>
+
+</div>
+
+<div id="Government Failings" class="tabcontent">
+  <h3>Government Failings</h3>
+  <p> There were many different government failings throughout the crisis. These failings exacerbated the problems, and if they had been addressed earlier, they could have prevented much of the damage. The Flint water treatment plant didn't follow the requirements of installing and maintaining corrosion control systems and maintaining sampling sites to regularly test water quality. They also didn't keep track of lead service lines, meaning their map of lead piping was incomplete or just inaccurate in some places. The Michigan Department of Environmental Quality (MDEQ) didn't require the corrosion control, which is something the EPA disagreed with. When data came out about high lead levels in homes the MDEQ prevented Flint from implementing corrosion control. Instead, they just ask for more tests to be performed in order to confirm widespread high lead levels. They only required Flint to implement corrosion control in 2016, long after the crisis started. It was determined that the MDEQ didn't do their job by not forcing Flint to follow the rules set by the EPA. EPA officials didn't effectively communicate their expectations or establish clear roles and responsibilities. Some other similar crises are those associated with Chinese drywall (CDW) and the San Francisco–Oakland Bay Bridge (SFOBB)</p>
+</div>
+
+<div id="Next Steps" class="tabcontent">
+  <h3>Next Steps</h3>
+  <p>These are possible next steps to take.</p>
+</div>
+
+<div id="Resources" class="tabcontent">
+  <h3>Resources</h3>
+  <p>These are my resources.</p>
+</div>
+
+<script>
+function openSection(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {tabcontent[i].style.display = "none";}
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {tablinks[i].className = tablinks[i].className.replace(" active", "");}
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html> 
